@@ -1,5 +1,20 @@
 # CSE316
 Assignment CA-2
+Q14.If a teacher is being served at the food mess and during the period when he is being served, another teacher comes, then that teacher would get the service (food) next. This process might continue leading to increase in waiting time of students to get food. Ensure in your program that the waiting time of students is minimized.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Q11. Write a C program to solve the following problem: 
 Suppose that a disk drive has 5,000 cylinders, numbered 0 to 4999. The drive is currently serving a request at cylinder143, and the previous request was at cylinder 125. The queue of pending requests, in FIFO 
 order,is: 
