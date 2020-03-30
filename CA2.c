@@ -1,14 +1,14 @@
 #include<stdio.h> 
- 
+#include<conio.h>
 int main() 
 { 
-     int i, limit, total = 0, x, counter = 0, time_quantum; 
+     int i, n, total = 0, x, counter = 0, time_quantum; 
       int wait_time = 0, turnaround_time = 0, arrival_time[10], burst_time[10], temp[10]; 
       float average_wait_time, average_turnaround_time;
       printf("\nEnter Total Number of Processes:\t"); 
-      scanf("%d", &limit); 
-      x = limit; 
-      for(i = 0; i < limit; i++) 
+      scanf("%d", &n); 
+      x = n; 
+      for(i = 0; i < n; i++) 
       {
             printf("\nEnter Details of Process[%d]\n", i + 1);
             printf("Arrival Time:\t");
@@ -41,7 +41,7 @@ int main()
                   turnaround_time = turnaround_time + total - arrival_time[i]; 
                   counter = 0; 
             } 
-            if(i == limit - 1) 
+            if(i == n - 1) 
             {
                   i = 0; 
             }
@@ -54,9 +54,10 @@ int main()
                   i = 0;
             }
       } 
-      average_wait_time = wait_time * 1.0 / limit;
-      average_turnaround_time = turnaround_time * 1.0 / limit;
+      average_wait_time = wait_time * 1.0 / n;
+      average_turnaround_time = turnaround_time * 1.0 / n;
       printf("\n\nAverage Waiting Time:\t%f", average_wait_time); 
       printf("\nAvg Turnaround Time:\t%f\n", average_turnaround_time); 
       return 0; 
 }
+
